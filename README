@@ -1,0 +1,37 @@
+
+题目中文翻译
+    一道排序的题目
+描述：
+
+有一个你不知道的秘密字符串。 给定字符串中的随机三元组集合，恢复原始字符串。
+
+这里的三元组被定义为三个字母的序列，使得每个字母出现在给定字符串中的下一个字符之前。
+“whi”是字符串“whatisup”的三元组。
+
+作为一种简化，你可以假设秘密字符串中不会出现一次以上的字母。
+
+除了有效的三元组以外，你可以不假设给予你的三元组，并且它们包含足够的信息来推导出原始的字符串。
+特别是，这意味着秘密字符串永远不会包含给予您的三元组中不会出现的字母。
+
+secret = "whatisup"
+triplets = [
+  ['t','u','p'],
+  ['w','h','i'],
+  ['t','s','u'],
+  ['a','t','s'],
+  ['h','a','p'],
+  ['t','i','s'],
+  ['w','h','s']
+]
+
+test.assert_equals(recoverSecret(triplets), secret)
+
+Description:
+
+There is a secret string which is unknown to you. Given a collection of random triplets from the string, recover the original string.
+
+A triplet here is defined as a sequence of three letters such that each letter occurs somewhere before the next in the given string. "whi" is a triplet for the string "whatisup".
+
+As a simplification, you may assume that no letter occurs more than once in the secret string.
+
+You can assume nothing about the triplets given to you other than that they are valid triplets and that they contain sufficient information to deduce the original string. In particular, this means that the secret string will never contain letters that do not occur in one of the triplets given to you.
